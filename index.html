@@ -1,8 +1,47 @@
-<div style="position: relative; width: 100%; height: 0; padding-top: 177.7778%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https://www.canva.com/design/DAGaayOW1X8/FS-VQ2bpYjt7XOyW7fWmtA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-  </iframe>
-</div>
-<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGaayOW1X8&#x2F;FS-VQ2bpYjt7XOyW7fWmtA&#x2F;view?utm_content=DAGaayOW1X8&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Historia menú digital de comida rústico beige y negro</a> de Maki Barreto
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotisería Online</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Bienvenidos a nuestra Rotisería</h1>
+  </header>
+
+  <section class="productos">
+    <h2>Productos Disponibles</h2>
+    <div class="producto" id="producto1">
+      <img src="producto1.jpg" alt="Pollo Asado">
+      <h3>Pollo Asado</h3>
+      <p>$10.00</p>
+      <button class="agregar" onclick="agregarAlCarrito('Pollo Asado', 10)">Añadir al Carrito</button>
+    </div>
+
+    <div class="producto" id="producto2">
+      <img src="producto2.jpg" alt="Pechugas de Pollo">
+      <h3>Pechugas de Pollo</h3>
+      <p>$8.00</p>
+      <button class="agregar" onclick="agregarAlCarrito('Pechugas de Pollo', 8)">Añadir al Carrito</button>
+    </div>
+
+    <!-- Agrega más productos según sea necesario -->
+  </section>
+
+  <section class="carrito">
+    <h2>Carrito</h2>
+    <ul id="carrito-lista">
+      <!-- Los productos del carrito se agregarán aquí -->
+    </ul>
+    <button onclick="realizarPedido()">Realizar Pedido</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Rotisería Online</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
